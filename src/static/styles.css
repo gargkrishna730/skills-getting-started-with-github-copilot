@@ -142,3 +142,75 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.participants-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.participants-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.participant-item {
+  background: #f8f9fa;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 0.3rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #555;
+  border-left: 3px solid #007bff;
+  position: relative;
+}
+
+.participant-item:before {
+  content: "👤";
+  margin-right: 0.5rem;
+}
+
+.participant-item:last-child {
+  margin-bottom: 0;
+}
+
+.no-participants {
+  color: #888;
+  font-style: italic;
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px dashed #ddd;
+}
+
+/* Scrollbar styling for participants list */
+.participants-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.participants-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+.participants-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 2px;
+}
+
+.participants-list::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
